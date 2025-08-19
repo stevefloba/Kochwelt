@@ -251,6 +251,14 @@ p {
     margin-top: 80px;
 }
 
+.impressum p {
+    margin-bottom: 0;
+}
+
+.impressum h2 {
+    margin-top: 40px;
+}
+
 
 
 footer {
