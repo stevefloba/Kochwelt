@@ -16,8 +16,9 @@ h2 {
 
 h3 {
     font-family: 'Raleway';
-    font-size: 26px;
-    font-weight: 200;
+    /* angepasst Jürgen von 26px und weight 400 / passte nicht zum Mockup */
+    font-size: 20px;
+    font-weight: 500;
 }
 
 header {
@@ -286,15 +287,11 @@ footer {
 /* CSS-Jürgen */
 .news {
     background-color: #EFEFEF;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-
+    border-bottom: 20px;
 }
 
 .h2-news-grafik {
     text-align: center;
-    padding-left: 60px;
     padding-top: 10px;
     margin-bottom: 10px;
 }
@@ -313,7 +310,8 @@ footer {
 }
 
 .recipe-grafik {
-    /* gap: 100px; */
+    display: flex;
+    flex-direction: column;
 }
 
 .recipe-grafik-middle {
@@ -330,8 +328,6 @@ footer {
 
 .h3-grafik {
     text-align: center;
-    padding-right: 55px;
-
 }
 
 /* ENDE CSS-Jürgen */
