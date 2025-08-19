@@ -120,3 +120,26 @@ p {
     object-fit: cover;
     object-position: center;
 }
+
+.blog {
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.blogwrap {
+    display: flex;
+    padding-top: 60px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footerlinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
