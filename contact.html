@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,29 @@
     <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style-contact.css">
+    <script src="contact.js"></script>
 </head>
+
 <body>
 
-    
-    
+    <!-- modify this form HTML and place wherever you want your form -->
+    <form class="contact" action="https://formspree.io/f/mwpqdkzv" method="POST">
+        <h2>Kontaktiere uns</h2>
+        <label for="fname">Dein Name:</label>
+        <input type="text" id="fname" name="fname">
+        <label>
+            Deine Mail:</label>
+        <input type="email" name="email">
+
+        <label>
+            Deine Nachricht: </label>
+        <textarea name="message"></textarea>
+
+        <!-- your other form fields go here -->
+        <button class="button" type="submit">Send</button>
+    </form>
+
 </body>
+
 </html>
