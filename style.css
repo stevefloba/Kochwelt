@@ -69,11 +69,16 @@ overflow: hidden;
 .button {
     background-color: #008000;
     color: white;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 5px 40px;
     border: none;
+    text-decoration: none;
+   font-family: 'Raleway';
 }
 
+.button:hover {
+    background-color: #025d02;
+
+}
 .rezept {
     padding-left: 150px;
     padding-right: 150px;
@@ -171,10 +176,13 @@ overflow: hidden;
 
 h2 {
     margin-bottom: 0;
+    margin-top:0;
+    font-family: 'Raleway';
 }
 
 p {
     margin-top: 0;
+    font-family: 'Raleway';
 }
 
 .autor {
