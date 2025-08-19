@@ -1,3 +1,8 @@
+h3 {
+    font-size: 26px;
+    font-weight: 200;
+}
+
 header {
     height: 80px;
     display: flex;
@@ -173,11 +178,30 @@ p {
 footer {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .footerlinks {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+/* CSS-Jürgen */
+.news {}
+
+.recipes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe-grafik {}
+
+.img-grafik {
+    height: 300px;
+    width: 300px;
+}
+
+.h3-grafik {
+    text-align: center;
 }
