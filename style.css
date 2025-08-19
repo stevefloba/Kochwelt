@@ -39,9 +39,8 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.daily-recept {
+.daily-recept {}
 
-}
 .daily-recept-main {
     display: flex;
     padding-left: 150px;
@@ -49,12 +48,16 @@ nav a:hover {
     gap: 20px;
 margin-top:40px ;
 overflow: hidden;
+    margin-top: 40px;
 }
+
 .daily-recept-main img {
     border-radius: 8px;
     height: 250px;
     object-fit: cover;
     
+    height: 200px;
+
 }
 .daily-text{
     display: flex;
@@ -64,12 +67,13 @@ overflow: hidden;
 }
 
 .button {
-   background-color: #008000;
+    background-color: #008000;
     color: white;
     padding-left: 40px;
     padding-right: 40px;
-    border: none; 
+    border: none;
 }
+
 .rezept {
     padding-left: 150px;
     padding-right: 150px;
@@ -217,20 +221,40 @@ footer {
 }
 
 /* CSS-Jürgen */
-.news {}
+.news {
+    background-color: #EFEFEF;
+}
+
+.h1-modify {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
 
 .recipes {
     display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
     justify-content: space-between;
 }
 
-.recipe-grafik {}
+.recipe-grafik {
+    /* noch ungenutzt */
+}
+
+.recipe-grafik-middle {
+    padding-left: 100px;
+    padding-right: 100px;
+}
 
 .img-grafik {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
 }
 
 .h3-grafik {
     text-align: center;
 }
+
+/* ENDE CSS-Jürgen */
