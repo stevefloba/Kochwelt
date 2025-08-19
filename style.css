@@ -312,11 +312,14 @@ footer {
 .recipe-grafik {
     display: flex;
     flex-direction: column;
+    text-decoration: none;
 }
 
-.recipe-grafik-middle {
-    /* padding-left: 100px; */
-    /* padding-right: 100px; */
+.recipe-grafik:hover {
+    background-color: #025d02;
+    color: white;
+    cursor: pointer;
+
 }
 
 .img-grafik {
@@ -328,6 +331,8 @@ footer {
 
 .h3-grafik {
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 /* ENDE CSS-Jürgen */
