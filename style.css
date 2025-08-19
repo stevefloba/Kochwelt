@@ -187,6 +187,7 @@ p {
 }
 
 .blog {
+    padding: 36px;
     flex-direction: column;
     text-align: center;
 
@@ -194,10 +195,14 @@ p {
 
 .blogwrap {
     display: flex;
+    justify-content: space-between;
     padding-top: 60px;
 }
 
 footer {
+    height: 30vh;
+    background-image: url(./img/bird-8323639_1920.jpg);
+    background-size: 100%;
     display: flex;
     justify-content: center;
 
