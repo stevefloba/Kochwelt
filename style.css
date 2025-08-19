@@ -259,6 +259,11 @@ p {
     margin-top: 40px;
 }
 
+.zusatz {
+    display: flex;
+    margin-top: 40px;
+}
+
 
 
 footer {
