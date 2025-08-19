@@ -20,7 +20,7 @@ h3 {
 }
 
 header {
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     padding-left: 150px;
@@ -44,10 +44,12 @@ nav {
 }
 
 nav a {
+    font-family: 'Raleway';
     font-size: 16px;
     text-decoration: none;
     font-weight: 600;
     color: #403b3b;
+    padding-bottom: 8px;
 }
 
 nav a:hover {
