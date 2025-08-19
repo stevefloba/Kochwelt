@@ -34,8 +34,29 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.daily-recept {
 
+}
+.daily-recept-main {
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+    gap: 20px;
+margin-top:40px ;
+}
+.daily-recept-main img {
+    border-radius: 8px;
+    height: 200px;
+    
+}
 
+.button {
+   background-color: #008000;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: none; 
+}
 .rezept {
     padding-left: 150px;
     padding-right: 150px;
