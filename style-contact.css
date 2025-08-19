@@ -1,11 +1,28 @@
+.body-contact {
+    display: flex;
+    justify-content: center;
+}
 .contact {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    
     background-color:  #f0f0f0;
     height: 500px;
     width: 400px;
     border-radius: 8px;
-    gap: 20px;
+    
+}
+.textarea {
+    height: 150px;
+}
+.label {
+   
+}
+.input {
+     display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    
 }
