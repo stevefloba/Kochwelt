@@ -211,11 +211,11 @@ footer {
 
 /* CSS-Jürgen */
 .news {
-    background-color: #EFEFEF ;
+    background-color: #EFEFEF;
 }
 
 .h1-modify {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     text-align: center;
 }
@@ -227,11 +227,18 @@ footer {
     justify-content: space-between;
 }
 
-.recipe-grafik {}
+.recipe-grafik {
+    /* noch ungenutzt */
+}
+
+.recipe-grafik-middle {
+    padding-left: 100px;
+    padding-right: 100px;
+}
 
 .img-grafik {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     border-radius: 10px;
 }
 
