@@ -47,11 +47,10 @@ header {
 
 
   .recipes {
-    display: flex;
     flex-direction: column;
-    margin-left: 150px;
-    margin-right: 150px;
-    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+
   }
 
   .recipe-grafik {
