@@ -339,8 +339,9 @@ footer a:hover {
     text-decoration: none;
 }
 
-
-/* CSS-Jürgen */
+/* ================ */
+/*    CSS-Jürgen    */
+/* ================ */
 .news {
     background-color: #EFEFEF;
     border-bottom: 20px;
@@ -386,6 +387,7 @@ footer a:hover {
 .img-grafik {
     height: 200px;
     width: 200px;
+    padding-top: 5px;
     border-radius: 8px;
     object-fit: cover;
 }
@@ -406,5 +408,6 @@ footer a:hover {
     padding-top: 5px;
     padding-bottom: 20px;
 }
-
-/* ENDE CSS-Jürgen */
+/* ================ */
+/* ENDE CSS-Jürgen  */
+/* ================ */
