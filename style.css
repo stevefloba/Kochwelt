@@ -89,13 +89,13 @@ nav a:hover {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-nav.active {
-    display: flex;
-}
+    nav.active {
+        display: flex;
+    }
 
-.burger {
-    display: block;
-}
+    .burger {
+        display: block;
+    }
 }
 
 
@@ -300,13 +300,13 @@ p {
 
 footer {
     height: 35vh;
-   background-color: #435337;
+    background-color: #435337;
     display: flex;
     justify-content: center;
 
 }
 
-.footerwrap{
+.footerwrap {
     padding-top: 60px;
 }
 
@@ -383,6 +383,11 @@ footer a:hover {
 .h3-grafik {
     text-align: center;
     padding-top: 10px;
+}
+
+.h3-grafik-bottom {
+    text-align: center;
+    padding-top: 5px;
     padding-bottom: 20px;
 }
 
