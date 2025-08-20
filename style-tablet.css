@@ -7,15 +7,28 @@
   /*=================================================================================*/
 
 
-header {
-  
+  header {
+
     padding-left: 64px;
     padding-right: 64px;
 
-}
+  }
 
+  .recipe {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
 
+  .input {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .ingredients input {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 24px;
+  }
 
 
   /*=================================================================================*/

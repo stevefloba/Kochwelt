@@ -8,12 +8,29 @@
   /*=====================================Stefan======================================*/
   /*=================================================================================*/
 
-header {
-  
+  header {
+
     padding-left: 16px;
     padding-right: 16px;
 
-}
+  }
+
+  .recipe {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .author {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+
+  .author p {
+    display: flex;
+    text-align: center;
+  }
+
 
 
   /*=================================================================================*/
