@@ -1,3 +1,22 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-family: 'Raleway';
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
 header {
     height: 100px;
     display: flex;
@@ -6,6 +25,7 @@ header {
     padding-left: 150px;
     padding-right: 150px;
     border-bottom: 4px solid #ccc;
+   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -205,4 +225,40 @@ p {
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+footer {
+    height: 35vh;
+    background-color: #435337;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footerwrap {
+    padding-top: 60px;
+}
+
+.footerlinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Raleway';
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000000;
+}
+
+footer a:link {
+    color: #000000;
+}
+
+footer a:visited {
+    color: #000000;
+}
+
+footer a:hover {
+    color: #008000;
+    text-decoration: none;
 }
