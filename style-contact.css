@@ -9,7 +9,9 @@ html {
 
 .body-contact {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .contact {
     display: flex;
@@ -62,4 +64,11 @@ input:hover {
     border-radius: 8px;
     margin-top: 64px;
     }
+
+    .textarea {
+    height: 150px;
+    width: 300px;
+
+   
+}
 }
