@@ -296,6 +296,13 @@ footer a:hover {
 /* CSS-Jürgen */
 .news {
     background-color: #EFEFEF;
+    border-bottom: 20px;
+}
+
+.h2-news-grafik {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
 }
 
 .h1-modify {
@@ -312,22 +319,29 @@ footer a:hover {
 }
 
 .recipe-grafik {
-    /* noch ungenutzt */
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
 }
 
-.recipe-grafik-middle {
-    padding-left: 100px;
-    padding-right: 100px;
+.recipe-grafik:hover {
+    background-color: #025d02;
+    color: white;
+    cursor: pointer;
+
 }
 
 .img-grafik {
     height: 200px;
     width: 200px;
-    border-radius: 10px;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 .h3-grafik {
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 /* ENDE CSS-Jürgen */
