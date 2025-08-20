@@ -5,19 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Pot Quinoa</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_recipe_quinoa.css">
     <link rel="stylesheet" href="fonts.css">
 </head>
 
 <body>
-    <section class="rezept">
+
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" alt="Kochwelt-Logo">
+        </div>
+
+        <!--Burger-Button-->
+        <button class="burger" aria-label="Menü öffnen/schließen">
+            ☰
+        </button>
+
+
+
+        <nav>
+            <a href="index.html" target="_blank">Start</a>
+            <a href="#">Rezept des Tages</a>
+            <a href="contact.html" target="_blank">Kontakt</a>
+            <a href="impressum.html" target="_blank">Impressum</a>
+        </nav>
+    </header>
+
+    <section class="recipe">
         <h2>One Pot Quinoa</h2>
 
         <div class="image-wrapper">
             <img src="./img/berriespassion_one-pot-quinoa2.jpg" alt="One Pot Quinoa Bild">
         </div>
 
-        <div class="anforderungen">
+        <div class="requirements">
             <div class="badge">
                 <img src="./img/clock-regular.svg" alt="Zubereitungszeit" class="icon">
                 <span>25 Min</span>
@@ -32,15 +53,15 @@
             </div>
         </div>
 
-        <div class="zutaten">
+        <div class="ingredients">
             <p>Zutaten für</p>
-            <div class="eingabe">
+            <div class="input">
                 <input placeholder="4">
                 <button>Portionen</button>
             </div>
         </div>
 
-        <ul class="zutatenliste">
+        <ul class="ingredient_list">
             <li>1 Paprika</li>
             <li>1 Dose Mais</li>
             <li>1 Dose rote Bohnen</li>
@@ -56,7 +77,7 @@
 
         <h2>Zubereitung</h2>
 
-        <div class="anforderungen">
+        <div class="requirements">
             <div class="badge">
                 <img src="./img/clock-regular.svg" alt="Zubereitungszeit" class="icon">
                 <span>ca. 25 Minuten</span>
@@ -77,7 +98,7 @@
 
         <h3>Rezept erstellt von</h3>
 
-        <div class="autor">
+        <div class="author">
             <div class="avatar">
                 <img src="./img/Techniker.jpg" alt="Bild von Autor">
             </div>
@@ -85,6 +106,24 @@
         </div>
 
     </section>
+
+    <!--Burger-Button-->
+    <script>
+        const burger = document.querySelector(".burger");
+        const nav = document.querySelector("nav");
+
+        burger.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+
+        const navLinks = document.querySelectorAll("nav a");
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                nav.classList.remove("active");
+            });
+        });
+    </script>
 
 </body>
 
