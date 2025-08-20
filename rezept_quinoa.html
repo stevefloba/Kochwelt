@@ -60,7 +60,7 @@
 
             <div class="input">
                 <label for="amount">Zutaten für</label>
-                <input id="amount" min="1" type="number">
+                <input id="amount" min="1" type="number" required>
                 <button>Portionen</button>
             </div>
         </div>
@@ -138,6 +138,30 @@
             link.addEventListener("click", () => {
                 nav.classList.remove("active");
             });
+        });
+    </script>
+
+    <script>
+        const input = document.getElementById("amount");
+
+        // Blockiert direkt das Tippen einer "0" als erste Ziffer
+        input.addEventListener("keydown", (e) => {
+            if (
+                e.key === "0" &&
+                (input.value === "" || input.selectionStart === 0)
+            ) {
+                e.preventDefault();
+            }
+        });
+
+        // Entfernt alles, was kein gültiger Wert >= 1 ist (auch bei Copy & Paste)
+        input.addEventListener("input", () => {
+            let value = input.value.replace(/\D/g, ""); // nur Ziffern zulassen
+            if (value === "" || parseInt(value, 10) < 1) {
+                input.value = "";
+            } else {
+                input.value = String(parseInt(value, 10));
+            }
         });
     </script>
 
