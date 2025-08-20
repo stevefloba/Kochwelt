@@ -1,3 +1,12 @@
+html {
+  background-image: url("./img/Suppe_Vegan.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position: center;
+  height: 100%; 
+}
+
 .body-contact {
     display: flex;
     justify-content: center;
@@ -24,5 +33,25 @@
     justify-content: flex-start;
     flex-direction: column;
     gap: 5px;
+    transition: 0.3s all ;
     
+}
+
+input:hover {
+    opacity: 0.6;
+}
+
+@media (max-width: 767px)
+
+{.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color:  #f0f0f0;
+    height: 500px;
+    width: 320px;
+    border-radius: 8px;
+    margin-top: 64px;
+    }
 }
