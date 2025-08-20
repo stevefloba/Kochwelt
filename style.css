@@ -362,6 +362,7 @@ footer a:hover {
     display: flex;
     margin-left: 150px;
     margin-right: 150px;
+    gap: 10px;
     justify-content: space-between;
 }
 

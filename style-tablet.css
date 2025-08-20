@@ -40,6 +40,21 @@
     padding-right: 64px;
     /* CSS-Regeln für Tablets */
   }
+ .daily-recept-main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 64px;
+    padding-right: 64px;
+    gap: 20px;
+    margin-top: 36px;
+    overflow: hidden;
+    margin-bottom: 36px;
+  }
+
+  .daily-text {
+    align-items: center;
+    text-align: center;
+  }
 
 
 
@@ -54,11 +69,6 @@
     margin-right: 0;
   }
 
-  /* @media (max-width: 920px) {
-    .recipes {
-      gap: 10px;
-    }
-  } */
 
   /*=================================================================================*/
   /*=====================================FLO========================================*/

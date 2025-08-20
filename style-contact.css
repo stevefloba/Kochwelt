@@ -23,8 +23,16 @@ html {
     margin-top: 200px;
     
 }
+.h2-contact {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 .textarea {
     height: 150px;
+    width: 350px;
 
    
 }
