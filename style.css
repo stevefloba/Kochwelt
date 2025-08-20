@@ -364,12 +364,16 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 200ms;
 }
 
 .recipe-grafik:hover {
     background-color: #025d02;
     color: white;
     cursor: pointer;
+    transform:scale(1.1);
 
 }
 
@@ -381,11 +385,17 @@ footer a:hover {
 }
 
 .h3-grafik {
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 600;
     text-align: center;
     padding-top: 10px;
 }
 
 .h3-grafik-bottom {
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 600;
     text-align: center;
     padding-top: 5px;
     padding-bottom: 20px;
