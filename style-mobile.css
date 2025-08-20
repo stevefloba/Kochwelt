@@ -1,0 +1,73 @@
+@media (max-width: 767px) {
+     /* CSS-Regeln für kleine Bildschirme (Handys)
+     padding zur seite 16px
+     alle artikel colum */
+
+
+/*=================================================================================*/
+/*=====================================Stefan======================================*/
+/*=================================================================================*/
+
+
+
+/*=================================================================================*/
+/*=====================================jojo========================================*/
+/*=================================================================================*/
+  .daily-recept-main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 20px;
+    margin-top: 36px;
+    overflow: hidden;
+    margin-bottom: 36px;
+}
+.daily-text {
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/*=================================================================================*/
+/*=====================================Jürgen======================================*/
+/*=================================================================================*/
+.recipes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-right: 150px;
+    justify-content: space-between;
+}
+
+.recipe-grafik {
+    align-items: center;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 200ms;
+}
+
+.recipe-grafik:hover {
+    /* background-color: #025d02; */
+    background-color: #f0f0f0;
+    /* color: white; */
+    color: black;
+    cursor: pointer;
+    transform:scale(1.1);
+
+}
+
+.img-grafik {
+    padding-top: 5px;
+}
+
+/*=================================================================================*/
+/*=====================================FLO=========================================*/
+/*=================================================================================*/
+
+
+
+
+
+ }
