@@ -300,6 +300,12 @@ p {
     margin-top: 80px;
 }
 
+@media(max-width: 370px) {
+    .impressum a {
+        font-size: 12px;
+    }
+}
+
 
 
 footer {
