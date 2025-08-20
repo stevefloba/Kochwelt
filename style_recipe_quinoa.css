@@ -156,7 +156,7 @@ nav a:hover {
     padding-bottom: 8px;
 }
 
-.input-label {
+.input label {
     padding-right: 20px;
     margin-bottom: 0;
     font-family: 'Raleway';
@@ -171,7 +171,7 @@ nav a:hover {
     height: 32px;
 }
 
-.button {
+.ingredients button {
     background-color: #008000;
     color: white;
     padding-left: 40px;
@@ -179,11 +179,10 @@ nav a:hover {
     border: none;
 }
 
-.button:hover {
+button:hover {
     opacity: 0.6;
     cursor: pointer;
 }
-
 .input {
     display: flex;
 }
