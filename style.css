@@ -99,6 +99,9 @@ nav.active {
 }
 
 
+/*=================================================================================*/
+/*=====================================jojo========================================*/
+/*=================================================================================*/
 
 .daily-recept-main {
     display: flex;
@@ -133,10 +136,12 @@ nav.active {
     border: none;
     text-decoration: none;
     font-family: 'Raleway';
+    transition: 0.3s ;
+    transition-timing-function: ease-in-out;
 }
 
 .button:hover {
-    background-color: #025d02;
+    opacity: 0.6
 
 }
 
