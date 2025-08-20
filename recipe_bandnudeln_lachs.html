@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Pot Quinoa</title>
+    <link rel="stylesheet" href="style_recipe_quinoa.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style-tablet.css">
+    <link rel="stylesheet" href="style-mobile.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" alt="Kochwelt-Logo">
+        </div>
+
+        <!--Burger-Button-->
+        <button class="burger" aria-label="Menü öffnen/schließen">
+            ☰
+        </button>
+
+
+
+        <nav>
+            <a href="index.html" target="_blank">Start</a>
+            <a href="#">Rezept des Tages</a>
+            <a href="contact.html" target="_blank">Kontakt</a>
+            <a href="impressum.html" target="_blank">Impressum</a>
+        </nav>
+    </header>
+
+    <section class="recipe">
+        <h2>One Pot Quinoa</h2>
+
+        <div class="image-wrapper">
+            <img src="./img/berriespassion_one-pot-quinoa2.jpg" alt="One Pot Quinoa Bild">
+        </div>
+
+        <div class="requirements">
+            <div class="badge">
+                <img src="./img/clock-regular.svg" alt="Zubereitungszeit" class="icon">
+                <span>25 Min</span>
+            </div>
+            <div class="badge">
+                <img src="./img/brain-solid.svg" alt="Anforderung" class="icon">
+                <span>simpel</span>
+            </div>
+            <div class="badge">
+                <img src="./img/calendar-alt-regular.svg" alt="Veröffentlicht" class="icon">
+                <span>18.08.2025</span>
+            </div>
+        </div>
+
+        <div class="ingredients">
+
+            <div class="input">
+                <label for="amount">Zutaten für</label>
+                <input id="amount" min="1" type="number" required>
+                <button>Portionen</button>
+            </div>
+        </div>
+
+        <ul class="ingredient_list">
+            <li>1 Paprika</li>
+            <li>1 Dose Mais</li>
+            <li>1 Dose rote Bohnen</li>
+            <li>1 Zwiebel</li>
+            <li>1 Dose geschälte Tomaten</li>
+            <li>1 Tasse Quinoa</li>
+            <li>2 Tassen Gemüsebrühe oder Wasser</li>
+            <li>1 Prise Salz</li>
+            <li>1 Prise Chiliflocken</li>
+            <li>1 Avocado</li>
+            <li>125 g Creme Fraiche</li>
+        </ul>
+
+        <h2>Zubereitung</h2>
+
+        <div class="requirements_end">
+            <div class="badge">
+                <img src="./img/clock-regular.svg" alt="Zubereitungszeit" class="icon">
+                <span>ca. 25 Minuten</span>
+            </div>
+            <div class="badge">
+                <img src="./img/clock-regular.svg" alt="Gesamtzeit" class="icon">
+                <span>Gesamtzeit ca. 40 Minuten</span>
+            </div>
+        </div>
+
+        <p>
+            Paprika und Zwiebel schneiden und gemeinsam mit den Bohnen, dem Mais, den geschälten Tomaten dem Quinoa und
+            dem Wasser bzw. der Brühe in einem Topf geben.
+            Mit Salz und Chili würzen und ca 20-25 Minuten kochen, bis die komplette Flüssigkeit verschwunden ist.
+            Avocado schneiden und gemeinsam mit einem oder 2 EL Sauerrahm anrichten. Oben drauf noch ein bisschen Chili
+            und schon kann das leckere Gericht verspeist werden.
+        </p>
+
+        <h3>Rezept erstellt von</h3>
+
+        <div class="author">
+            <div class="avatar">
+                <img src="./img/Techniker.jpg" alt="Bild von Autor">
+            </div>
+            <p>Stefan, gefunden bei "www.ninaradman.com".</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footerwrap">
+            <img src="./img/logo.png" alt="Kochweltlogo">
+            <div class="footerlinks">
+                <a href="#">Kontakte</a>
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--Burger-Button-->
+    <script>
+        const burger = document.querySelector(".burger");
+        const nav = document.querySelector("nav");
+
+        burger.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+
+        const navLinks = document.querySelectorAll("nav a");
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                nav.classList.remove("active");
+            });
+        });
+    </script>
+
+    <script>
+        const input = document.getElementById("amount");
+
+        // Blockiert direkt das Tippen einer "0" als erste Ziffer
+        input.addEventListener("keydown", (e) => {
+            if (
+                e.key === "0" &&
+                (input.value === "" || input.selectionStart === 0)
+            ) {
+                e.preventDefault();
+            }
+        });
+
+        // Entfernt alles, was kein gültiger Wert >= 1 ist (auch bei Copy & Paste)
+        input.addEventListener("input", () => {
+            let value = input.value.replace(/\D/g, ""); // nur Ziffern zulassen
+            if (value === "" || parseInt(value, 10) < 1) {
+                input.value = "";
+            } else {
+                input.value = String(parseInt(value, 10));
+            }
+        });
+    </script>
+
+</body>
+
+</html>
