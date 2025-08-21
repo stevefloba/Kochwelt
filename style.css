@@ -353,21 +353,25 @@ footer a:hover {
     text-decoration: none;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column; /* Flexbox in Spaltenrichtung */
-  overflow-x: hidden;     /* verhindert horizontalen Balken */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Flexbox in Spaltenrichtung */
+    overflow-x: hidden;
+    /* verhindert horizontalen Balken */
 }
 
 main {
-  flex: 1; /* nimmt den freien Platz ein */
+    flex: 1;
+    /* nimmt den freien Platz ein */
 }
 
 /* ================ */
