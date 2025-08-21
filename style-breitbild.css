@@ -3,3 +3,10 @@
         max-width: 1440px;
         margin: 0 auto;
     }
+    
+    @media(min-width: 1440px) {
+        .header-widescreen {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+    }

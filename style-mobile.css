@@ -10,9 +10,14 @@
 
   header {
 
+    padding-left: 0;
+    padding-right: 0;
+
+  }
+
+  .header-widescreen {
     padding-left: 16px;
     padding-right: 16px;
-
   }
 
   .recipe {
@@ -99,10 +104,10 @@
     padding: 40px 16px 0px;
   }
 
- .footerlogo {
-  height: 96px;
-  width: 300px;
- }
+  .footerlogo {
+    height: 96px;
+    width: 300px;
+  }
 
 
 }
