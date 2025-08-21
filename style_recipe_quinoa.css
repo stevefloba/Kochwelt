@@ -175,6 +175,7 @@ button:hover {
     opacity: 0.6;
     cursor: pointer;
 }
+
 .input {
     display: flex;
 }
@@ -271,7 +272,15 @@ footer a:hover {
     color: #008000;
     text-decoration: none;
 }
- .screenwrapp {
-        max-width: 1440px;
-        margin: 0 auto;
-    }
+
+.screenwrapp {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
