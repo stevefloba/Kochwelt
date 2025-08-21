@@ -1,14 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deine Nachricht</title>
-     <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
+    <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style-send-mail.css">
+    <link rel="stylesheet" href="style-contact.css">
 </head>
-<body>
-    <h1>Deine Nachricht wurde verschickt</h1>
+
+<body class="body-contact">
+    <header class="header-cantact">
+        <div class="logo">
+            <img src="./img/logo.png" alt="Kochwelt-Logo">
+        </div>
+
+        <!--Burger-Button-->
+        <button class="burger" aria-label="Menü öffnen/schließen">
+            ☰
+        </button>
+
+
+
+        <nav>
+            <a href="index.html" target="_blank">Start</a>
+            <a href="#">Rezept des Tages</a>
+            <a href="contact.html" target="_blank">Kontakt</a>
+            <a href="impressum.html" target="_blank">Impressum</a>
+        </nav>
+    </header>
+
+    <body class="flex">
+        <div class="send-container">
+            <h1>Deine Nachricht wurde verschickt</h1>
+        </div>
+
+        <div class="stick-footer">
+
+            <!--footer nach unten drücken-->
+        </div>
+        <div class="footer-end"></div>
+        <footer>
+            <div class="footerwrap">
+                <img class="footerlogo" src="./img/logo.png" alt="Kochweltlogo">
+                <div class="footerlinks">
+                    <a href="contact.html">Kontakte</a>
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </div>
+            </div>
+
+
+            </div>
+        </footer>
+
+        <!--Burger-Button-->
+        <script>
+            const burger = document.querySelector(".burger");
+            const nav = document.querySelector("nav");
+
+            burger.addEventListener("click", () => {
+                nav.classList.toggle("active");
+            });
+
+            const navLinks = document.querySelectorAll("nav a");
+
+            navLinks.forEach(link => {
+                link.addEventListener("click", () => {
+                    nav.classList.remove("active");
+                });
+            });
+        </script>
+
+    </body>
 </body>
+
 </html>

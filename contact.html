@@ -14,8 +14,8 @@
     <script src="contact.js"></script>
 </head>
 
-  
-<header>
+<div class="container-flex">
+    <header class="header-cantact">
         <div class="logo">
             <a href="index.html">
             <img src="./img/logo.png" alt="Kochwelt-Logo">
@@ -35,57 +35,64 @@
             <a href="impressum.html">Impressum</a>
         </nav>
     </header>
-<body class="body-contact">
- 
 
-    
-    <form class="contact" action="https://formspree.io/f/mwpqdkzv" method="POST">
-        <div class="input">
-            <h2 class=h2-contact>Kontaktiere uns</h2>
-        <label for="fname">Dein Name:</label>
-        <input type="text" id="fname" name="fname"placeholder="Max Wurstmann">
-        <label>
-            Deine Mail:</label>
-        <input type="email" name="email" placeholder="was-geht@ihr-freaks24.de">
+    <body class="body-contact">
 
-        <label class="label">
-            Deine Nachricht: </label>
-        <textarea class="textarea" name="message" placeholder="was willst du uns sagen?"></textarea>
 
-        <button class="button" type="submit">Send</button>
-        </div>
-    </form>
-    <div class="footer-end"></div>
-     <footer>
-        <div class="footerwrap">
-            <img class="footerlogo" src="./img/logo.png" alt="Kochweltlogo">
-            <div class="footerlinks">
-                <a href="contact.html">Kontakte</a>
-                <a href="impressum.html">Impressum</a>
-                <a href="datenschutz.html">Datenschutz</a>
+
+        <form class="contact" onsubmit="sendMail(event)">
+            <div class="input">
+                <h2 class=h2-contact>Kontaktiere uns</h2>
+                <label for="fname">Dein Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Max Wurstmann">
+                <label>
+                    Deine Mail:</label>
+                <input type="email" name="email" placeholder="was-geht@ihr-freaks24.de">
+
+                <label class="label">
+                    Deine Nachricht: </label>
+                <textarea class="textarea" name="message" placeholder="was willst du uns sagen?"></textarea>
+
+                <button class="button" type="submit">Send</button>
             </div>
+        </form>
+        <div class="stick-footer">
+
+            <!--footer nach unten drücken-->
         </div>
+        <div class="footer-end"></div>
+        <footer>
+            <div class="footerwrap">
+                <img class="footerlogo" src="./img/logo.png" alt="Kochweltlogo">
+                <div class="footerlinks">
+                    <a href="contact.html">Kontakte</a>
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </div>
+            </div>
+
+
 </div>
-    </footer>
+</footer>
+</div>
 
+<!--Burger-Button-->
+<script>
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector("nav");
 
-      <!--Burger-Button-->
-    <script>
-        const burger = document.querySelector(".burger");
-        const nav = document.querySelector("nav");
+    burger.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
 
-        burger.addEventListener("click", () => {
-            nav.classList.toggle("active");
+    const navLinks = document.querySelectorAll("nav a");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            nav.classList.remove("active");
         });
-
-        const navLinks = document.querySelectorAll("nav a");
-
-        navLinks.forEach(link => {
-            link.addEventListener("click", () => {
-                nav.classList.remove("active");
-            });
-        });
-    </script>
+    });
+</script>
 
 </body>
 
