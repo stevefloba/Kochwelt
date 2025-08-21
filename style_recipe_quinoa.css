@@ -155,8 +155,9 @@ nav a:hover {
 }
 
 .ingredients input {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    /* border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px; */
+    border-radius: 8px;
     border: 1px solid #ccc;
     height: 32px;
 }
@@ -167,7 +168,7 @@ nav a:hover {
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 8px;
-    height: 30px;
+    height: 32px;
     border: none;
 }
 
@@ -178,6 +179,7 @@ button:hover {
 
 .input {
     display: flex;
+    gap: 3px;
 }
 
 .ingredient_list {
