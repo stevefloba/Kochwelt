@@ -10,76 +10,81 @@
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style-send-mail.css">
     <link rel="stylesheet" href="style-contact.css">
+    <link rel="stylesheet" href="style-breitbild.css">
 </head>
 
 <body class="body-contact">
-    <header class="header-cantact">
-        <div class="logo">
-            <a href="index.html">
-                <img src="./img/logo.png" alt="Kochwelt-Logo">
-            </a>
-        </div>
-
-        <!--Burger-Button-->
-        <button class="burger" aria-label="Menü öffnen/schließen">
-            ☰
-        </button>
-
-
-
-        <nav>
-            <a href="index.html">Start</a>
-            <a href="recipe_quinoa.html">Rezept des Tages</a>
-            <a href="contact.html">Kontakt</a>
-            <a href="impressum.html">Impressum</a>
-        </nav>
-    </header>
-
-    <body class="flex">
-        <div class="send-container">
-            <h1>Deine Nachricht wurde verschickt</h1>
-        </div>
-
-        <div class="stick-footer">
-
-            <!--footer nach unten drücken-->
-        </div>
-        <div class="footer-end"></div>
-        <footer>
-            <div class="footerwrap">
-                <a href="index.html">
-                    <img class="footerlogo" src="./img/logo.png" alt="Kochweltlogo">
-                </a>
-                <div class="footerlinks">
-                    <a href="contact.html">Kontakte</a>
-                    <a href="impressum.html">Impressum</a>
-                    <a href="datenschutz.html">Datenschutz</a>
+    <div class="container-flex">
+        <header class="header-cantact header-widescreen">
+            
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./img/logo.png" alt="Kochwelt-Logo">
+                    </a>
                 </div>
+
+                <!--Burger-Button-->
+                <button class="burger" aria-label="Menü öffnen/schließen">
+                    ☰
+                </button>
+
+
+
+                <nav>
+                    <a href="index.html">Start</a>
+                    <a href="recipe_quinoa.html">Rezept des Tages</a>
+                    <a href="impressum.html">Impressum</a>
+                </nav>
+            
+        </header>
+
+        <body class="flex">
+            <div class="send-container">
+                <h1>Deine Nachricht wurde verschickt</h1>
             </div>
 
+            <div class="stick-footer">
 
+                <!--footer nach unten drücken-->
             </div>
-        </footer>
+            <div class="footer-end"></div>
+            <footer>
+                <div class="footerwrap">
+                    <a href="index.html">
+                        <img class="footerlogo" src="./img/logo.png" alt="Kochweltlogo">
+                    </a>
+                    <div class="footerlinks">
+                        <a href="contact.html">Kontakte</a>
+                        <a href="impressum.html">Impressum</a>
+                        <a href="datenschutz.html">Datenschutz</a>
+                    </div>
+                </div>
 
-        <!--Burger-Button-->
-        <script>
-            const burger = document.querySelector(".burger");
-            const nav = document.querySelector("nav");
 
-            burger.addEventListener("click", () => {
-                nav.classList.toggle("active");
+    </div>
+
+    
+    </footer>
+
+    <!--Burger-Button-->
+    <script>
+        const burger = document.querySelector(".burger");
+        const nav = document.querySelector("nav");
+
+        burger.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+
+        const navLinks = document.querySelectorAll("nav a");
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                nav.classList.remove("active");
             });
+        });
+    </script>
 
-            const navLinks = document.querySelectorAll("nav a");
-
-            navLinks.forEach(link => {
-                link.addEventListener("click", () => {
-                    nav.classList.remove("active");
-                });
-            });
-        </script>
-
-    </body>
+</body>
 </body>
 
 </html>
