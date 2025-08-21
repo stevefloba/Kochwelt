@@ -43,22 +43,22 @@
 
 
 
-        <form class="contact" onsubmit="sendMail(event)">
-            <div class="input">
-                <h2 class=h2-contact>Kontaktiere uns</h2>
-                <label for="fname">Dein Name:</label>
-                <input type="text" id="fname" name="fname" placeholder="Max Wurstmann" minlength="2">
-                <label>
-                    Deine Mail:</label>
-                <input type="email" name="email" placeholder="was-geht@ihr-freaks24.de">
+     <form class="contact" onsubmit="if(this.checkValidity()) { sendMail(event); } else { return false; }">
+    <div class="input">
+        <h2 class="h2-contact">Kontaktiere uns</h2>
 
-                <label class="label">
-                    Deine Nachricht: </label>
-                <textarea class="textarea" name="message" placeholder="was willst du uns sagen?" required minlength="5"> </textarea>
+        <label for="fname">Dein Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Max Wurstmann" required minlength="2">
 
-                <button class="button" type="submit">Send</button>
-            </div>
-        </form>
+        <label for="email">Deine Mail:</label>
+        <input type="email" id="email" name="email" placeholder="was-geht@ihr-freaks24.de" required>
+
+        <label for="message" class="label">Deine Nachricht:</label>
+        <textarea class="textarea" id="message" name="message" placeholder="Was willst du uns sagen?" required minlength="5"></textarea>
+
+        <button class="button" type="submit">Send</button>
+    </div>
+</form>
         <div class="stick-footer">
 
             <!--footer nach unten drücken-->
