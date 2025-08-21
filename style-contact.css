@@ -1,5 +1,9 @@
-html {
-  background-image: url("./img/Suppe_Vegan.jpg"); 
+header {
+    background-color: white;
+    width: 100%;
+}
+body {
+ 
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment:fixed;
@@ -23,6 +27,8 @@ html {
     width: 400px;
     border-radius: 8px;
     margin-top: 200px;
+   margin-bottom: 400px;
+   
     
 }
 .h2-contact {
@@ -51,6 +57,49 @@ input:hover {
     opacity: 0.6;
 }
 
+footer {
+    height: 250px;
+    background-color: #435337;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+  margin-bottom: 0px;
+  margin-top: auto;
+   
+width: 100%;
+
+}
+
+.footerwrap {
+    padding-top: 60px;
+}
+
+.footerlinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Raleway';
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000000;
+}
+.footer-end {
+    display: flex;
+    justify-content: flex-end;
+}
+footer a:link {
+    color: #000000;
+}
+
+footer a:visited {
+    color: #000000;
+}
+
+footer a:hover {
+    color: #008000;
+    text-decoration: none;
+}
 @media (max-width: 767px)
 
 {.contact {

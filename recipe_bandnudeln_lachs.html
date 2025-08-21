@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Pot Quinoa</title>
+    <link rel="stylesheet" href="style_recipe_quinoa.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style-tablet.css">
+    <link rel="stylesheet" href="style-mobile.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" alt="Kochwelt-Logo">
+        </div>
+
+        <!--Burger-Button-->
+        <button class="burger" aria-label="Menü öffnen/schließen">
+            ☰
+        </button>
+
+
+
+        <nav>
+            <a href="index.html" target="_blank">Start</a>
+            <a href="#">Rezept des Tages</a>
+            <a href="contact.html" target="_blank">Kontakt</a>
+            <a href="impressum.html" target="_blank">Impressum</a>
+        </nav>
+    </header>
+
+    <section class="recipe">
+        <h2>Lachs an Bandnudeln in Sahne-Limetten-Dill-Sauce</h2>
+
+        <div class="image-wrapper">
+            <img src="./img/bandnudeln-mit-lachs.jpg" alt="Bandnudeln mit Lachs">
+        </div>
+
+        <div class="requirements">
+            <div class="badge">
+                <img src="./img/clock-regular.svg" alt="Zubereitungszeit" class="icon">
+                <span>60 min</span>
+            </div>
+            <div class="badge">
+                <img src="./img/brain-solid.svg" alt="Anforderung" class="icon">
+                <span>mittel</span>
+            </div>
+            <div class="badge">
+                <img src="./img/calendar-alt-regular.svg" alt="Veröffentlicht" class="icon">
+                <span>20.08.2025</span>
+            </div>
+        </div>
+
+        <div class="ingredients">
+
+            <div class="input">
+                <label for="amount">Zutaten für</label>
+                <input id="amount" min="1" type="number" required>
+                <button>Portionen</button>
+            </div>
+        </div>
+
+        <ul class="ingredient_list">
+            <li>250 g bissfest in Salzwasser mit Cucuma vorgekochte Bandnudeln; warm halten</li>
+            <li>200 g Lachs oder geräucherter Lachs, in ca. 1 cm Würfel geschnitten</li>
+            <li>1 rote Paprika in kurzen, feinen Streifen</li>
+            <li>2 dickere Lauchzwiebeln in feinen Ringen</li>
+            <li>1 mittlere Zwiebel in feinen Würfeln</li>
+            <li>4 Knoblauchzehen in feinen Würfeln</li>
+            <li>1-4 frische, milde Peperoni in feinen Ringen</li>
+            <li>400 ml Sahne</li>
+            <li>4 TL Schmand</li>
+            <li>ca. 200-300 ml trockner Weißwein</li>
+            <li>3-6 EL Limettensaft; 100 % Direktsaft aus der Flasche ist ok</li>
+            <li>ca. 1-3 EL getrockneter Dill</li>
+            <li>ca. 2 EL Butterschmalz zum Anbraten</li>
+            <li>ca. 1 EL Honig, ca. 1 EL süße Sojasauce</li>
+            <li>3-6 EL Wasser; je nach benötigter Flüssigkeitsmenge</li>
+            <li>Gewürze: Salz, schwarzer Pfeffer, Paprika edelsüß, Chilipulver</li>
+            <li>in kaltem Wasser gelöste Speisestärke zum Andicken bereitstellen</li>
+        </ul>
+
+        <h2>Zubereitung</h2>
+
+        <div class="requirements_end">
+            <div class="badge">
+                <img src="./img/clock-regular.svg" alt="Zubereitungszeit" class="icon">
+                <span>ca. 60 Minuten</span>
+            </div>
+            <div class="badge">
+                <img src="./img/clock-regular.svg" alt="Gesamtzeit" class="icon">
+                <span>Gesamtzeit ca. 60 Minuten</span>
+            </div>
+        </div>
+
+        <span>
+            In der Pfanne den Butterschmalz erhitzen. Zwiebeln und Knoblauch sanft anschmoren. Dann Paprika,
+            Lauchzwiebel und Peperoni hinzugeben und etwas mitschmoren.
+        </span>
+        <span>
+            Mit dem Weißwein ablöschen, dann Limettensaft, Sahne, Schmand und Wasser hinzugeben. Deckel auf die Pfanne
+            legen und ca. 8 Min sanft köcheln lassen, bis die Paprika gegart ist.
+        </span>
+        <span>
+            Nun den Süße-Säure-Grad mit Honig, Süße Sojasauce und Limettensaft abstimmen, je nach Wunsch. Die Säure
+            sollte schmeckbar sein. Mit den Gewürzen abschmecken.
+        </span>
+        <span>
+            Jetzt mit der Speisestärke die Sauce andicken. Den Lachs unterheben und mit Deckel ca. 2-4 min garen. Dann die
+            vorgekochten Bandnudeln unterheben und servieren.
+        </span><br><br>
+
+        <h3>Rezept erstellt von</h3>
+
+        <div class="author">
+            <div class="avatar">
+                <img src="./img/jürgen-malinowski.jpg" alt="Bild von Autor Jürgen Malinowski">
+            </div>
+            <p>Rezept von Jürgen Malinowski, Mai 2025</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footerwrap">
+            <img src="./img/logo.png" alt="Kochweltlogo">
+            <div class="footerlinks">
+                <a href="#">Kontakte</a>
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--Burger-Button-->
+    <script>
+        const burger = document.querySelector(".burger");
+        const nav = document.querySelector("nav");
+
+        burger.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+
+        const navLinks = document.querySelectorAll("nav a");
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                nav.classList.remove("active");
+            });
+        });
+    </script>
+
+    <script>
+        const input = document.getElementById("amount");
+
+        // Blockiert direkt das Tippen einer "0" als erste Ziffer
+        input.addEventListener("keydown", (e) => {
+            if (
+                e.key === "0" &&
+                (input.value === "" || input.selectionStart === 0)
+            ) {
+                e.preventDefault();
+            }
+        });
+
+        // Entfernt alles, was kein gültiger Wert >= 1 ist (auch bei Copy & Paste)
+        input.addEventListener("input", () => {
+            let value = input.value.replace(/\D/g, ""); // nur Ziffern zulassen
+            if (value === "" || parseInt(value, 10) < 1) {
+                input.value = "";
+            } else {
+                input.value = String(parseInt(value, 10));
+            }
+        });
+    </script>
+
+</body>
+
+</html>
