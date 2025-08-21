@@ -166,6 +166,8 @@ nav a:hover {
     color: white;
     padding-left: 40px;
     padding-right: 40px;
+    border-radius: 8px;
+    height: 30px;
     border: none;
 }
 
