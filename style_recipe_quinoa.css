@@ -279,3 +279,7 @@ footer a:hover {
     color: #008000;
     text-decoration: none;
 }
+ .screenwrapp {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
