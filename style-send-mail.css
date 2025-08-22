@@ -1,3 +1,92 @@
+.header-widescreen {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+
+header {
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-fit {
+    display: flex;
+}
+
+.logo img {
+    height: 68px;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+    align-items: end;
+}
+
+nav a {
+    font-family: 'Raleway';
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #403b3b;
+    padding-bottom: 8px;
+}
+
+nav a:hover {
+    color: #008000;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 3px;
+}
+
+.burger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 1024px) {
+    header {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+
+    nav {
+        display: none;
+        flex-direction: column;
+        gap: 16px;
+        background: #f8f8f8;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 200px;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+
+
+
 .send-container {
 
     display: flex;
@@ -18,6 +107,14 @@
     justify-content: center;
 }
 
+body {
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position: center;
+  height: 100%; 
+}
 .container-flex {
     display: flex;
     flex-direction: column;
@@ -29,8 +126,7 @@
 .header-cantact {
     background-color: white;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+   
 }
     
     
